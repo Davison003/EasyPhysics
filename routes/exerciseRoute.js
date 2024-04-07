@@ -4,7 +4,7 @@ const exerciseController = require("../controllers/exerciseController");
 
 const router = express.Router();
 
-router.route("/").get("/", exerciseController.getAllExercises);
+router.route("/").get(exerciseController.getAllExercises);
 
 router
   .route("/:id")
