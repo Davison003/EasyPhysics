@@ -6,7 +6,7 @@ exports.getAllExercises = async (req, res) => {
 
     res.status(200).json({
       status: "success",
-      results: tours.length,
+      results: exercises.length,
       data: {
         exercises: exercises,
       },
