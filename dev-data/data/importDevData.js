@@ -7,13 +7,14 @@ const Exercise = require("../../models/exerciseModel");
 dotenv.config({ path: "./config.env" });
 
 const DB = process.env.DATABASE.replace(
-  "<PASSWORD>",
-  process.env.DATABASE_PASSWORD
-);
+  "<USERNAME>",
+  process.env.USERNAME
+).replace("<PASSWORD>", process.env.DATABASE_PASSWORD);
 
 async function dbConnect() {
-  await mongoose.connect(DB).then(() => {
+  await mongoose.connect(DB).then((conn) => {
     console.log("DB connection successful!");
+    // console.log(conn.connection.db);
   });
 }
 
