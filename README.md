@@ -19,7 +19,7 @@ Exibe questões de física - limitações correspondentes à primeira entrega do
 
 - HTML
 - CSS
-- Bootsrap - Biblioteca de estilização
+- Bootstrap - Biblioteca de estilização
 - Javascript
 
 ## Back-End
@@ -32,3 +32,10 @@ Exibe questões de física - limitações correspondentes à primeira entrega do
 Será usada também a ferramenta Docker para o deployment da aplicação
 
 ### [Link Repositório](https://github.com/Davison003/EasyPhysics)
+
+## Instruções
+
+Possuir Node.js instalado
+No terminal do diretório digitar: 
++ ```npm install``` para instalar as dependências
++ ```npm server.js ``` para executar o back
