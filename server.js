@@ -6,8 +6,8 @@ const app = require("./app");
 
 const DB = process.env.DATABASE.replace(
   "<USERNAME>",
-  process.env.USERNAME
-).replace("<PASSWORD>", process.env.DATABASE_PASSWORD);
+  process.env.DB_USERNAME
+).replace("<PASSWORD>", process.env.DB_PASSWORD);
 
 async function dbConnect() {
   await mongoose.connect(DB).then(() => {
