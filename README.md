@@ -2,7 +2,7 @@
 
 # Integrantes
 
-- Amanda
+- Amanda Moura Cavalcante
 - Caio
 - Davi Regonatti Rodrigues
 - Thomas
