@@ -6,7 +6,7 @@
 - Caio
 - Davi Regonatti Rodrigues
 - Thomas
-- Victor
+- Victor Henrique Paulo Lopes Pereira
 
 ---
 
