@@ -35,7 +35,7 @@ Será usada também a ferramenta Docker para o deployment da aplicação
 
 ## Instruções
 
-Possuir Node.js instalado <br>
+Possuir Node.js versão atual e npm instalados <br>
 No terminal do diretório digitar: 
 + ```npm install``` para instalar as dependências
-+ ```npm server.js ``` para executar o back
++ ```npm start``` para executar o back
