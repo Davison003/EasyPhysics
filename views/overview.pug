@@ -1,0 +1,25 @@
+extends base
+
+block content
+    section.botao.container.col-md-6
+        div.largura.h-100.p-5.bg-body-tertiary.rounded-3.border
+            p Ordenar Dificuldade
+            input(type="radio" name="options-base" autocomplete="off").btn-check#ascBt
+            label(for="ascBt").btn.testin Asc ↑
+
+            input(type="radio" name="options-base" autocomplete="off").btn-check#descBt
+            label(for="descBt").btn.testin Desc ↓
+        
+    div.problemas-container 
+        each exercise in exercises 
+             div.container.my-5
+                div.p-5.bg-body-tertiary.rounded-3
+                    h1.text-body-emphasis.text-center #{exercise.name}
+                    p.lead.enunciado #{exercise.description}
+                    - const letters = ['a)', 'b)', 'c)', 'd)', 'e)'];
+                    - const difficulty = ['Fácil', 'Médio', 'Difícil'];
+                    each val, index in letters
+                        p.lead.alternativas= val + ' ' + exercise.alternatives[index]
+                    p.lead.dific Dificuldade: #{difficulty[exercise.difficulty -1]}
+                    
+        
