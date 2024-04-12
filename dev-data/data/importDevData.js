@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 
 const Exercise = require("../../models/exerciseModel");
 
-dotenv.config({ path: "./config.env" });
+dotenv.config({ path: "./../../config.env" });
 
 const DB = process.env.DATABASE.replace(
   "<USERNAME>",
