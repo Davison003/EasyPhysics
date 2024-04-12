@@ -5,7 +5,7 @@
 - Amanda Moura Cavalcante
 - Caio
 - Davi Regonatti Rodrigues
-- Thomas
+- Thomas Hurtado dos Reis
 - Victor Henrique Paulo Lopes Pereira
 
 ---
