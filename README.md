@@ -3,9 +3,9 @@
 # Integrantes
 
 - Amanda Moura Cavalcante
-- Caio
+- Caio Augusto Rolim dos Santos Umeda
 - Davi Regonatti Rodrigues
-- Thomas
+- Thomas Hurtado dos Reis
 - Victor Henrique Paulo Lopes Pereira
 
 ---
