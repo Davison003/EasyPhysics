@@ -22,8 +22,8 @@ const exerciseSchema = new mongoose.Schema({
     type: Number,
     required: true,
     enum: {
-      values: [0, 1, 2],
-      message: "Difficulty must be between 0 (Easy) and 2 (Hard)",
+      values: [1, 2, 3],
+      message: "Difficulty must be between 1 (Easy) and 3 (Hard)",
     },
   },
 });

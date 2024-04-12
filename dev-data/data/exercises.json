@@ -10,21 +10,21 @@
       "38km e 18km"
     ],
     "correctAnswer": 2,
-    "difficulty": 0
+    "difficulty": 1
   },
   {
     "name": "Ponto alto de trajetoria",
     "description": "(UEL-PR) Um corpo é lançado para cima, com velocidade inicial de 50 m/s, numa direção que forma um ângulo de 60º com a horizontal. Desprezando a resistência do ar, pode-se afirmar que no ponto mais alto da trajetória a velocidade do corpo, em metros por segundo, será: (Dados: sen 60º 0,87; cos 60º 0,50)",
     "alternatives": ["5", "10", "25", "40", "50"],
     "correctAnswer": 2,
-    "difficulty": 0
+    "difficulty": 1
   },
   {
     "name": "Frequencia Movimento Harmonico",
     "description": "(Fcap-PA) A posição de um corpo em função do tempo, que executa um movimento harmônico simples, é dada por: x = 0.17 * cos(5πt + π/3), onde x é dado em metros e t em segundos. A freqüência do movimento é:",
     "alternatives": ["2.5 Hz", "π/2 Hz", "0.17 Hz", "5π/3 Hz", "1.7 Hz"],
     "correctAnswer": 0,
-    "difficulty": 0
+    "difficulty": 1
   },
   {
     "name": "Serrando um Ímã",
@@ -37,14 +37,14 @@
       "O pólo sul conserva-se isolado, mas o pólo norte desaparece"
     ],
     "correctAnswer": 2,
-    "difficulty": 0
+    "difficulty": 1
   },
   {
     "name": "Tamanho dos trens",
     "description": "(Furg-RS) Dois trens A e B movem-se com velocidades constantes de 36 km/h, em direções perpendiculares, aproximando-se do ponto de cruzamento das linhas. Em t = 0 s, à frente do trem A está a uma distância de 2 km do cruzamento. Os comprimentos dos trens A e B são, respectivamente, 150 m e 100 m. Se o trem B passa depois pelo cruzamento e não ocorre colisão, então a distância de sua frente até o cruzamento, no instante t = 0 s, é, necessariamente, maior que:",
     "alternatives": ["250m", "2000m", "2050m", "2150m", "2250m"],
     "correctAnswer": 2,
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "name": "Comprimento de Onda de Rádio",
@@ -57,7 +57,7 @@
       "1.6・10^14m e 3.2・10^16m"
     ],
     "correctAnswer": 2,
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "name": "Vetor Campo Magnético",
@@ -70,7 +70,7 @@
       "B = 2.8・10^-6 T"
     ],
     "correctAnswer": 2,
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "name": "Constante Elástica Mola",
@@ -83,7 +83,7 @@
       "1.8π^2・10^5 N/m"
     ],
     "correctAnswer": 4,
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "name": "Frequencia Violinista",
@@ -96,7 +96,7 @@
       "Inexistente, pois a frequência deve aumentar à medida que o diapasão se aproxima do chão."
     ],
     "correctAnswer": 3,
-    "difficulty": 2
+    "difficulty": 3
   },
   {
     "name": "Velocidade da Partícula",
@@ -109,6 +109,6 @@
       "faltam dados para o cálculo"
     ],
     "correctAnswer": 3,
-    "difficulty": 2
+    "difficulty": 3
   }
 ]
