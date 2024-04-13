@@ -20,39 +20,25 @@ exports.getAllExercises = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getExercise = async (req, res) => {
-  try {
-    const exercise = await Exercise.findById(req.params.id);
-    res.status(200).json({
-      status: "success",
-      data: {
-        exercise: exercise,
-      },
-    });
-  } catch (err) {
-    res.status(400).json({
-      status: "fail",
-      message: err,
-    });
-  }
-};
+exports.getExercise = catchAsync(async (req, res) => {
+  const exercise = await Exercise.findById(req.params.id);
+  res.status(200).json({
+    status: "success",
+    data: {
+      exercise: exercise,
+    },
+  });
+});
 
-exports.updateExercise = async (req, res) => {
-  try {
-    const exercise = await Exercise.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true,
-    });
-    res.status(200).json({
-      status: "success",
-      data: {
-        exercise: exercise,
-      },
-    });
-  } catch (err) {
-    res.status(400).json({
-      status: "fail",
-      message: err,
-    });
-  }
-};
+exports.updateExercise = catchAsync(async (req, res) => {
+  const exercise = await Exercise.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
+  res.status(200).json({
+    status: "success",
+    data: {
+      exercise: exercise,
+    },
+  });
+});
