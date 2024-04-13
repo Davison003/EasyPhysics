@@ -83,6 +83,9 @@
 #titulo {
   font-size: 70px !important;
 }
+.header {
+  margin-bottom: 100px;
+}
 
 .enunciado {
   text-align: justify !important;

@@ -13,14 +13,14 @@
     "difficulty": 1
   },
   {
-    "name": "Ponto alto de trajetoria",
+    "name": "Ponto alto de trajetória",
     "description": "(UEL-PR) Um corpo é lançado para cima, com velocidade inicial de 50 m/s, numa direção que forma um ângulo de 60º com a horizontal. Desprezando a resistência do ar, pode-se afirmar que no ponto mais alto da trajetória a velocidade do corpo, em metros por segundo, será: (Dados: sen 60º 0,87; cos 60º 0,50)",
     "alternatives": ["5", "10", "25", "40", "50"],
     "correctAnswer": 2,
     "difficulty": 1
   },
   {
-    "name": "Frequencia Movimento Harmonico",
+    "name": "Frequência com Movimento Harmônico",
     "description": "(Fcap-PA) A posição de um corpo em função do tempo, que executa um movimento harmônico simples, é dada por: x = 0.17 * cos(5πt + π/3), onde x é dado em metros e t em segundos. A freqüência do movimento é:",
     "alternatives": ["2.5 Hz", "π/2 Hz", "0.17 Hz", "5π/3 Hz", "1.7 Hz"],
     "correctAnswer": 0,
@@ -40,7 +40,7 @@
     "difficulty": 1
   },
   {
-    "name": "Tamanho dos trens",
+    "name": "Tamanho dos Trens",
     "description": "(Furg-RS) Dois trens A e B movem-se com velocidades constantes de 36 km/h, em direções perpendiculares, aproximando-se do ponto de cruzamento das linhas. Em t = 0 s, à frente do trem A está a uma distância de 2 km do cruzamento. Os comprimentos dos trens A e B são, respectivamente, 150 m e 100 m. Se o trem B passa depois pelo cruzamento e não ocorre colisão, então a distância de sua frente até o cruzamento, no instante t = 0 s, é, necessariamente, maior que:",
     "alternatives": ["250m", "2000m", "2050m", "2150m", "2250m"],
     "correctAnswer": 2,
@@ -86,7 +86,7 @@
     "difficulty": 3
   },
   {
-    "name": "Frequencia Violinista",
+    "name": "Frequência do Violinista",
     "description": "(ITA-SP) Um violinista deixa cair um diapasão de frequência 440 Hz. A frequência que o violinista ouve na iminência do diapasão tocar no chão é de 436 Hz. Desprezando o efeito da resistência do ar, a altura da queda é:",
     "alternatives": [
       "9.4m",
