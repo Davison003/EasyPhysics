@@ -38,4 +38,5 @@ Será usada também a ferramenta Docker para o deployment da aplicação
 Possuir Node.js versão atual e npm instalados <br>
 No terminal do diretório digitar: 
 + ```npm install``` para instalar as dependências
-+ ```npm start``` para executar o back
++ ```npm start``` para criar o server e conectar com o BD
++ Abrir ```localhost:8000/``` no navegador
