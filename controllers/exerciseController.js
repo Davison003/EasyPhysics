@@ -1,8 +1,8 @@
-const Exercise = require("../models/exerciseModel");
-const APIFeatures = require("../utils/apiFeatures");
-const catchAsync = require("../utils/catchAsync");
+import { Exercise } from "../models/exerciseModel.js";
+import { APIFeatures } from "../utils/apiFeatures.js";
+import { catchAsync } from "../utils/catchAsync.js";
 
-exports.getAllExercises = catchAsync(async (req, res, next) => {
+export const getAllExercises = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Exercise.find(), req.query)
     .filter()
     .sort()
@@ -20,7 +20,7 @@ exports.getAllExercises = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getExercise = catchAsync(async (req, res) => {
+export const getExercise = catchAsync(async (req, res) => {
   const exercise = await Exercise.findById(req.params.id);
   res.status(200).json({
     status: "success",
@@ -30,7 +30,7 @@ exports.getExercise = catchAsync(async (req, res) => {
   });
 });
 
-exports.updateExercise = catchAsync(async (req, res) => {
+export const updateExercise = catchAsync(async (req, res) => {
   const exercise = await Exercise.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
     runValidators: true,

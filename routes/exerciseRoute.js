@@ -1,14 +1,13 @@
-const express = require("express");
+import express from "express";
 
-const exerciseController = require("../controllers/exerciseController");
+import {
+  getAllExercises,
+  getExercise,
+  updateExercise,
+} from "../controllers/exerciseController.js";
 
-const router = express.Router();
+export const exerciseRouter = express.Router();
 
-router.route("/").get(exerciseController.getAllExercises);
+exerciseRouter.route("/").get(getAllExercises);
 
-router
-  .route("/:id")
-  .get(exerciseController.getExercise)
-  .patch(exerciseController.updateExercise);
-
-module.exports = router;
+exerciseRouter.route("/:id").get(getExercise).patch(updateExercise);

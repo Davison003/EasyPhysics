@@ -1,8 +1,8 @@
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 
 dotenv.config({ path: "./config.env" });
-const app = require("./app");
+import { app } from "./app.js";
 
 const DB = process.env.DATABASE.replace(
   "<USERNAME>",
