@@ -1,14 +1,17 @@
-const path = require("path");
-const express = require("express");
-const morgan = require("morgan");
+import path from "path";
+import express from "express";
+import morgan from "morgan";
+import { fileURLToPath } from "url";
 
-const exerciseRouter = require("./routes/exerciseRoute");
-const viewRouter = require("./routes/viewRoute");
+import { exerciseRouter } from "./routes/exerciseRoute.js";
+import { viewRouter } from "./routes/viewRoute.js";
 
-const app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// app.set("view engine", "pug");
-// app.set("views", path.join(__dirname, "views"));
+export const app = express();
+
+app.set("view engine", "pug");
 
 //MIDDLEWARES
 // app.use(express.static(path.join(__dirname, "public")));
@@ -20,5 +23,3 @@ app.use(express.json());
 //ROUTES
 app.use("/", viewRouter);
 app.use("/api/exercises", exerciseRouter); //temporary route
-
-module.exports = app;
