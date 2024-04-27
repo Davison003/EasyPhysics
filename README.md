@@ -31,7 +31,9 @@ Exibe questões de física - limitações correspondentes à primeira entrega do
 
 Será usada também a ferramenta Docker para o deployment da aplicação
 
-### [Link Repositório](https://github.com/Davison003/EasyPhysics)
+## Links 
+- [Link Repositório](https://github.com/Davison003/EasyPhysics)
+- [Link Vídeo Primeira Entrega](https://drive.google.com/file/d/1HCbR8xkWMVkJrsk1s2IxEfW1T54VMYJ9/view?usp=sharing)
 
 ## Instruções
 
