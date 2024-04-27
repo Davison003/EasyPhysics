@@ -7,15 +7,15 @@ const viewRouter = require("./routes/viewRoute");
 
 const app = express();
 
-app.set("view engine", "pug");
-app.set("views", path.join(__dirname, "views"));
+// app.set("view engine", "pug");
+// app.set("views", path.join(__dirname, "views"));
 
 //MIDDLEWARES
+// app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
 
 //ROUTES
 app.use("/", viewRouter);
