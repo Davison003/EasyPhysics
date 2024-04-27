@@ -84,7 +84,7 @@
   font-size: 70px !important;
 }
 .header {
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
 }
 
 .enunciado {
@@ -96,6 +96,7 @@
 }
 
 .dific {
+  /* margin-bottom: -20px; */
   text-align: right !important;
 }
 
@@ -109,4 +110,26 @@
 
 .largura {
   width: fit-content !important;
+}
+
+.list-group-item:hover {
+  background-color: rgba(100, 100, 100, 0.025) !important;
+  font-weight: 400;
+  transition: all 0.15s ease-in-out !important;
+  transition: font-weight 0.015s ease-in-out !important;
+}
+
+.correct {
+  border: 1px solid rgb(50, 187, 111) !important;
+  display: none;
+}
+.false {
+  border: 1px solid rgb(211, 50, 50) !important;
+  display: none;
+}
+
+.exercise:hover {
+  background-color: #e9e9e9 !important;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer;
 }
