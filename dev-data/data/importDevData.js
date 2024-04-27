@@ -4,12 +4,13 @@ const dotenv = require("dotenv");
 
 const Exercise = require("../../models/exerciseModel");
 
-dotenv.config({ path: "./../../config.env" });
+dotenv.config({ path: "../../config.env" });
 
-const DB = process.env.DATABASE.replace(
-  "<USERNAME>",
-  process.env.DB_USERNAME
-).replace("<PASSWORD>", process.env.DB_PASSWORD);
+const mongo =
+  "mongodb+srv://usuario:1234@maincluster.zi2ufb7.mongodb.net/easy-physics?retryWrites=true&w=majority&appName=MainCluster";
+const DB = mongo;
+// .replace("<USERNAME>", process.env.DB_USERNAME)
+// .replace("<PASSWORD>", process.env.DB_PASSWORD);
 
 async function dbConnect() {
   await mongoose.connect(DB).then((conn) => {
