@@ -1,18 +1,8 @@
-const Exercise = require("../models/exerciseModel");
-const catchAsync = require("../utils/catchAsync");
-const APIFeatures = require("../utils/apiFeatures");
+import { Exercise } from "../models/exerciseModel.js";
+import { catchAsync } from "../utils/catchAsync.js";
+import { APIFeatures } from "../utils/apiFeatures.js";
 
-// exports.sortByDifficultyAsc = (req, res, next) => {
-//   req.query.sort = "difficulty,name";
-//   next();
-// };
-
-// exports.sortByDifficultyDesc = (req, res, next) => {
-//   req.query.sort = "-difficulty,name";
-//   next();
-// };
-
-exports.getOverview = catchAsync(async (req, res, next) => {
+export const getOverview = catchAsync(async (req, res, next) => {
   console.log(req.params, req.query);
   const features = new APIFeatures(Exercise.find(), req.query)
     .filter()
@@ -26,5 +16,13 @@ exports.getOverview = catchAsync(async (req, res, next) => {
   res.status(200).render("overview", {
     title: "Home",
     exercises: exercises,
+  });
+});
+
+export const getExercise = catchAsync(async (req, res, next) => {
+  const exercise = await Exercise.findOne({ slug: req.params.slug });
+  res.status(200).render("exercise", {
+    title: exercise.name,
+    exercise,
   });
 });
