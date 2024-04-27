@@ -1,0 +1,16 @@
+extends base
+
+block content 
+    div.problemas-container 
+        div.container.my-5
+            div.p-5.bg-body-tertiary.rounded-3.exercise.border
+                h1.text-body-emphasis.text-center #{exercise.name}
+                p.lead.enunciado #{exercise.description}
+                - const letters = ['a)', 'b)', 'c)', 'd)', 'e)'];
+                - const difficulty = ['Fácil', 'Médio', 'Difícil'];
+                ul.list-group.alternatives-list
+                    each val, index in letters 
+                        li.list-group-item.alternatives.lead #{letters[index]} #{exercise.alternatives[index]}
+                p.lead.dific Dificuldade: #{difficulty[exercise.difficulty -1]}
+                p.d-grid.d-md-flex.justify-content-end
+                    a(href="/").link-dark.link-offset-2.link-underline-opacity-25.link-underline-opacity-100-hover Retornar ⏎ 
