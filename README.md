@@ -13,7 +13,9 @@
 # Descrição Projeto
 
 Aplicação Web feita para a disciplina Certificadora 1 <br>
-Exibe questões de física - limitações correspondentes à primeira entrega do projeto
+<br>
+Homepage exibe os exercícios e possibilita sua ordenação por dificuldade <br>
+Cada exercício tem sua própria rota <br>
 
 ## Front-End
 
@@ -31,14 +33,16 @@ Exibe questões de física - limitações correspondentes à primeira entrega do
 
 Será usada também a ferramenta Docker para o deployment da aplicação
 
-## Links 
+## Links
+
 - [Link Repositório](https://github.com/Davison003/EasyPhysics)
 - [Link Vídeo Primeira Entrega](https://drive.google.com/file/d/1HCbR8xkWMVkJrsk1s2IxEfW1T54VMYJ9/view?usp=sharing)
 
 ## Instruções
 
 Possuir Node.js versão atual e npm instalados <br>
-No terminal do diretório digitar: 
-+ ```npm install``` para instalar as dependências
-+ ```npm start``` para criar o server e conectar com o BD
-+ Abrir ```localhost:8000/``` no navegador
+No terminal do diretório digitar:
+
+- `npm install` para instalar as dependências
+- `npm start` para criar o server e conectar com o BD
+- Abrir `localhost:8000/` no navegador
