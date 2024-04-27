@@ -1,26 +1,13 @@
-const express = require("express");
-const viewsController = require("../controllers/viewsController");
-const fs = require("fs");
+import express from "express";
+import fs from "fs";
+import { getExercise } from "../controllers/viewsController.js";
 
-const router = express.Router();
+export const viewRouter = express.Router();
 
-router.get("/", (req, res) => {
+viewRouter.get("/", (req, res) => {
   const overview = fs.readFileSync("../public/index.html", "utf8");
 
   res.send(overview);
 });
-// router.post("/", viewsController.getOverview);
 
-// router.get(
-//   "/exercises/sort=difficulty",
-//   viewsController.sortByDifficultyAsc,
-//   viewsController.getOverview
-// );
-
-// router.get(
-//   "/exercises/sort=-difficulty",
-//   viewsController.sortByDifficultyDesc,
-//   viewsController.getOverview
-// );
-
-module.exports = router;
+viewRouter.get("/exercise/:slug", getExercise);
