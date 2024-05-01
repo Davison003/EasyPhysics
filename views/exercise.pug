@@ -3,14 +3,16 @@ extends base
 block content 
     div.problemas-container 
         div.container.my-5
-            div.p-5.bg-body-tertiary.rounded-3.exercise.border
+            div.p-5.bg-body-tertiary.rounded-3.exercise.border(data-exercise= `${JSON.stringify(exercise)}`)
                 h1.text-body-emphasis.text-center #{exercise.name}
                 p.lead.enunciado #{exercise.description}
                 - const letters = ['a)', 'b)', 'c)', 'd)', 'e)'];
                 - const difficulty = ['Fácil', 'Médio', 'Difícil'];
                 ul.list-group.alternatives-list
                     each val, index in letters 
-                        li.list-group-item.alternatives.lead #{letters[index]} #{exercise.alternatives[index]}
-                p.lead.dific Dificuldade: #{difficulty[exercise.difficulty -1]}
+                        li.list-group-item.lead(class= `alternative-${index}`) #{letters[index]} #{exercise.alternatives[index]}
+                div.d-flex.mb-2.mt-4
+                    button.btn.btn-secondary.btn-sm.me-auto#solve-again(disabled)  Resolver Novamente
+                    p.lead.justify-self-end Dificuldade: #{difficulty[exercise.difficulty -1]}
                 p.d-grid.d-md-flex.justify-content-end
                     a(href="/").link-dark.link-offset-2.link-underline-opacity-25.link-underline-opacity-100-hover Retornar ⏎ 
