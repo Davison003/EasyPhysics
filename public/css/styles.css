@@ -117,15 +117,14 @@
   font-weight: 400;
   transition: all 0.15s ease-in-out !important;
   transition: font-weight 0.015s ease-in-out !important;
+  cursor: pointer;
 }
 
 .correct {
   border: 1px solid rgb(50, 187, 111) !important;
-  display: none;
 }
 .false {
   border: 1px solid rgb(211, 50, 50) !important;
-  display: none;
 }
 
 .exercise:hover {
