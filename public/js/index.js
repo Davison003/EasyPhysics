@@ -12,17 +12,17 @@ let exerciseConfigs = { params: { sort: "difficulty" } };
 ascBt.addEventListener("click", (e) => {
   e.preventDefault();
   exerciseConfigs.params.sort = "difficulty,name";
-  renderExercises(exerciseConfigs);
+  renderExercises(exerciseConfigs, true);
 });
 
 descBt.addEventListener("click", (e) => {
   e.preventDefault();
   exerciseConfigs.params.sort = "-difficulty,name";
   // console.log("hello from desc");
-  renderExercises(exerciseConfigs);
+  renderExercises(exerciseConfigs, true);
 });
 
 // rendering exercise list as body loads
 document.body.onload = () => {
-  renderExercises();
+  renderExercises({}, true);
 };

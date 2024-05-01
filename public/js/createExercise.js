@@ -1,5 +1,5 @@
 // function to create the exercise elements and append them to the main container
-export function createExercise(exerciseObj) {
+export function createExercise(exerciseObj, simplified) {
   // parent container for exercise
   const exContainer = document.createElement("div");
   exContainer.classList.add("container", "my-5");
@@ -33,13 +33,7 @@ export function createExercise(exerciseObj) {
   const options = ["a)", "b)", "c)", "d)", "e)"];
   exerciseObj.alternatives.forEach((alternative, index) => {
     const exAlternative = document.createElement("li");
-    exAlternative.classList.add(
-      "list-group-item",
-      "alternatives",
-      "lead",
-      // if index == correctAnswer, 'correct' class gets added, otherwise, 'false' class added
-      index == exerciseObj.correctAnswer ? "correct" : "false"
-    );
+    exAlternative.classList.add("list-group-item", "alternatives", "lead");
     exAlternative.textContent = `${options[index]} ${alternative}`;
     exAlternatives.appendChild(exAlternative);
   });
@@ -75,7 +69,7 @@ export function createExercise(exerciseObj) {
   exBody.append(
     exTitle,
     exDescription,
-    exAlternatives,
+    simplified ? "" : exAlternatives,
     exDifficulty,
     solveLinkParapragh
   );
