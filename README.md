@@ -15,7 +15,9 @@
 Aplicação Web feita para a disciplina Certificadora 1 <br>
 <br>
 Homepage exibe os exercícios e possibilita sua ordenação por dificuldade <br>
-Cada exercício tem sua própria rota <br>
+Cada exercício pode ser acessado e resolvido <br>
+O progresso do usuário fica salvo <br>
+É possível responder questões já completas
 
 ## Front-End
 
