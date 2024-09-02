@@ -4,6 +4,11 @@ import { renderExercises } from "./renderExercises.js";
 const ascBt = document.querySelector("#ascBt");
 const descBt = document.querySelector("#descBt");
 
+const scoreBoard = document.querySelector(".pontuacao");
+
+const score = JSON.parse(localStorage.getItem("score")) || { score: 0 };
+scoreBoard.innerHTML = score.score;
+
 // stardand sorting for 'asc'
 // let sortDirection = "difficulty";
 let exerciseConfigs = { params: { sort: "difficulty" } };
