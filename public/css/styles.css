@@ -108,6 +108,34 @@
   display: flex;
 }
 
+.score {
+  text-align: center !important;
+  font-family: var(--bs-body-font-family) !important;
+  font-size: 1.25rem !important;
+  justify-content: flex-end !important;
+  display:flex;
+  position: sticky;
+  bottom: 0px;
+  padding: 1em 0;
+  margin: 0px !important;
+  width: 250px !important;
+  left: 100% !important;
+}
+
+.pontos{
+  padding: 15px !important;
+  margin-right: 30px !important;
+}
+
+.pontos:hover{
+  background-color: #e9e9e9 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.espaco{
+  margin-bottom: 4px !important;
+}
+
 .largura {
   width: fit-content !important;
 }
@@ -130,5 +158,4 @@
 .exercise:hover {
   background-color: #e9e9e9 !important;
   transition: all 0.2s ease-in-out !important;
-  /* cursor: pointer; */
 }
