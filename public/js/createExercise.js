@@ -41,9 +41,21 @@ export function createExercise(exerciseObj, simplified) {
   // creating the difficulty element for exercise
   const lvls = ["Fácil", "Médio", "Difícil"];
   const exDifficulty = document.createElement("p");
-  exDifficulty.classList.add("lead", "dific");
-  // changes the diffic number for the respective string
+  //changes the diffic number for the respective string
   exDifficulty.textContent = `Dificuldade: ${lvls[exerciseObj.difficulty - 1]}`;
+  exDifficulty.classList.add("lead", "dific");
+  // lvls.forEach((lvl) => {
+  //   const exDifficultyOption = document.createElement("option");
+  //   exDifficultyOption.value = lvls.indexOf(lvl) + 1;
+  //   exDifficultyOption.textContent = lvl;
+  //   exDifficultyOption.onclick = () => {
+  //     console.log("clicked");
+  //     exerciseObj.diffilculty = exDifficultyOption.value;
+  //     updateExerciseDifficulty(exerciseObj);
+  //     console.log(exerciseObj._id);
+  //   };
+  //   exDifficulty.appendChild(exDifficultyOption);
+  // });
 
   // creating the parent for the link
   const solveLinkParapragh = document.createElement("p");

@@ -10,4 +10,4 @@ export const exerciseRouter = express.Router();
 
 exerciseRouter.route("/").get(getAllExercises);
 
-exerciseRouter.route("/:id").get(getExercise).patch(updateExercise);
+exerciseRouter.route("/exercise/:slug").get(getExercise).patch(updateExercise);
