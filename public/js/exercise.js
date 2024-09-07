@@ -28,13 +28,13 @@ const checkAnswer = (target) => {
     }
   } else {
     target.classList.add("false");
-    solvedExercise.numGuesses += 1;
     baseScore = 0;
     const correctElement = document.querySelector(
       `.alternative-${exercise.correctAnswer}`
     );
     correctElement.classList.add("correct");
   }
+  solvedExercise.numGuesses += 1;
 
   // saves the user guess and the correct answer to localStorage, using the slug as the key
   localStorage.setItem(
