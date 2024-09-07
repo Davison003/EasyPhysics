@@ -33,13 +33,12 @@ O progresso do usuário fica salvo <br>
 - MongoDB - Banco de Dados NoSQL
 - Mongoose - Ferramenta de modelagem de objetos baseados em MongoDB
 
-Será usada também a ferramenta Docker para o deployment da aplicação
-
 ## Links
 
 - [Link Repositório](https://github.com/Davison003/EasyPhysics)
 - [Link Vídeo Primeira Entrega](https://drive.google.com/file/d/1HCbR8xkWMVkJrsk1s2IxEfW1T54VMYJ9/view?usp=sharing)
 - [Link Vídeo Segunda Entrega](https://drive.google.com/file/d/1W3EcP7FKKIlS8s_POwwWurL3Nezmt5wY/view?usp=sharing)
+- [Link Vídeo Terceira Entrega](https://drive.google.com/file/d/19KWBdN4VGJaLN-HKlcEgYCmUsaPMJDFx/view?usp=sharing)
 
 ## Instruções
 
